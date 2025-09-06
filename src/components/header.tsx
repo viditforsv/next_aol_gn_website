@@ -1,8 +1,8 @@
-"use client";
+"use client"
 
-import Link from "next/link";
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
+import Link from "next/link"
+import Image from "next/image"
+import { Button } from "@/components/ui/button"
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -10,13 +10,14 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu";
+} from "@/components/ui/navigation-menu"
 
-export function Navigation() {
+export function Header() {
   return (
-    <nav className="border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
+    <header className="border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-50">
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
+          {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">
             <Image
               src="/aol_logo.svg"
@@ -31,6 +32,7 @@ export function Navigation() {
             </div>
           </Link>
 
+          {/* Navigation */}
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
@@ -132,11 +134,23 @@ export function Navigation() {
                   </Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
+
+              <NavigationMenuItem>
+                <NavigationMenuLink asChild>
+                  <Link href="/templates" className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">
+                    📄 Templates
+                  </Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
 
+          {/* CTA Button */}
+          <Button className="bg-[#E74902] hover:bg-[#FF0000] text-white">
+            Join Us
+          </Button>
         </div>
       </div>
-    </nav>
-  );
+    </header>
+  )
 }

@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Source_Sans_3 } from "next/font/google";
 import "./globals.css";
-import { Navigation } from "@/components/navigation";
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
+import { FloatingWhatsApp } from "@/components/floating-whatsapp";
 
 const sourceSans = Source_Sans_3({
   variable: "--font-source-sans",
@@ -29,8 +31,12 @@ export default function RootLayout({
       <body
         className={`${sourceSans.variable} antialiased`}
       >
-        <Navigation />
-        {children}
+        <Header />
+        <main className="min-h-screen">
+          {children}
+        </main>
+        <Footer />
+        <FloatingWhatsApp />
       </body>
     </html>
   );

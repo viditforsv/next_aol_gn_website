@@ -34,3 +34,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# development demo pages
+src/app/components-demo/
+src/components-demo/
+
+# development templates
+src/app/templates/

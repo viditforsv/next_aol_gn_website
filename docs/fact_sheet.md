@@ -1,5 +1,6 @@
 Font: Source Sans Pro
-Color Scheme: 
+Color Scheme:
+
 - Black: #000000
 - Cream: #FFF0CD
 - Golden: #F6CB62

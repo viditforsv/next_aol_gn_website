@@ -1,0 +1,27 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+
+### 1. Design System Compliance
+
+- Follow color, typography, spacing, and component standards.
+- No inline or ad-hoc styles unless approved.
+
+### 2. Component & Template Priority
+
+- Use **shadcn/ui** components first.
+- Leverage templates/layouts before writing custom code.
+- Extend only when necessary.
+
+### 3. Token Economy
+
+- Keep responses minimal.
+- No redundant explanations or duplicate code.
+
+### 4. Git Workflow
+
+- Never auto-push commits.
+- GitHub pushes require explicit approval.
+- Stage commits locally, wait for confirmation.
