@@ -1,12 +1,14 @@
 {
-  "name": "next_aol_gn_website",
-  "version": "0.1.0",
+  "name": "art-of-living-great-noida",
+  "version": "1.0.0",
+  "description": "Art of Living Great Noida Chapter Website",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "deploy": "vercel --prod"
   },
   "dependencies": {
     "@radix-ui/react-navigation-menu": "^1.2.14",
