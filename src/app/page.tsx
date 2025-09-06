@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#FFF0CD] to-[#F6CB62]">
+    <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-16">
         <div className="max-w-6xl mx-auto">
@@ -31,10 +31,10 @@ export default function Home() {
                 and modern practices for holistic well-being.
               </p>
               <div className="flex gap-4 justify-center lg:justify-start flex-wrap">
-                <Button size="lg" className="bg-[#F6CB62] hover:bg-[#ECA55A] text-black">
+                <Button size="lg" className="bg-[#E74902] hover:bg-[#FF0000] text-white">
                   Join Our Community
                 </Button>
-                <Button variant="outline" size="lg">
+                <Button variant="outline" size="lg" className="border-[#E74902] text-[#E74902] hover:bg-[#E74902] hover:text-white">
                   Learn More
                 </Button>
               </div>
@@ -64,7 +64,8 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="container mx-auto px-4 py-16">
+      <section className="bg-[#FFF0CD] py-16">
+        <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h3 className="text-3xl font-bold text-gray-900 mb-4">
             What We Offer
@@ -117,6 +118,7 @@ export default function Home() {
             </CardContent>
           </Card>
         </div>
+        </div>
       </section>
 
       {/* Contact Section */}
@@ -131,7 +133,7 @@ export default function Home() {
             <Button variant="secondary" size="lg">
               Contact Us
             </Button>
-            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-[#E74902]">
+            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-[#E74902] bg-transparent">
               Upcoming Events
             </Button>
           </div>

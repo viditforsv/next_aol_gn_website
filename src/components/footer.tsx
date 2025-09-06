@@ -8,7 +8,7 @@ export function Footer() {
   return (
     <footer className="bg-[#FFF0CD] border-t border-[#F6CB62]">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand Section */}
           <div className="md:col-span-2">
             <Link href="/" className="flex items-center space-x-3 mb-4">
@@ -61,32 +61,6 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Programs */}
-          <div>
-            <h3 className="text-lg font-semibold text-[#E74902] mb-4">Programs</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/programs/meditation" className="text-gray-700 hover:text-[#E74902] transition-colors">
-                  Meditation
-                </Link>
-              </li>
-              <li>
-                <Link href="/programs/yoga" className="text-gray-700 hover:text-[#E74902] transition-colors">
-                  Yoga
-                </Link>
-              </li>
-              <li>
-                <Link href="/programs/breathing" className="text-gray-700 hover:text-[#E74902] transition-colors">
-                  Breathing Techniques
-                </Link>
-              </li>
-              <li>
-                <Link href="/programs/community" className="text-gray-700 hover:text-[#E74902] transition-colors">
-                  Community Service
-                </Link>
-              </li>
-            </ul>
-          </div>
         </div>
 
         {/* Bottom Section */}

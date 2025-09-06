@@ -127,27 +127,32 @@ export function Header() {
                 </NavigationMenuLink>
               </NavigationMenuItem>
 
-              <NavigationMenuItem>
-                <NavigationMenuLink asChild>
-                  <Link href="/components-demo" className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">
-                    🚧 Demo
-                  </Link>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
+              {/* Development-only navigation items */}
+              {process.env.NODE_ENV === 'development' && (
+                <>
+                  <NavigationMenuItem>
+                    <NavigationMenuLink asChild>
+                      <Link href="/components-demo" className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">
+                        🚧 Demo
+                      </Link>
+                    </NavigationMenuLink>
+                  </NavigationMenuItem>
 
-              <NavigationMenuItem>
-                <NavigationMenuLink asChild>
-                  <Link href="/templates" className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">
-                    📄 Templates
-                  </Link>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
+                  <NavigationMenuItem>
+                    <NavigationMenuLink asChild>
+                      <Link href="/templates" className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">
+                        📄 Templates
+                      </Link>
+                    </NavigationMenuLink>
+                  </NavigationMenuItem>
+                </>
+              )}
             </NavigationMenuList>
           </NavigationMenu>
 
           {/* CTA Button */}
           <Button className="bg-[#E74902] hover:bg-[#FF0000] text-white">
-            Join Us
+            Contact Team
           </Button>
         </div>
       </div>

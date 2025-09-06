@@ -6,7 +6,6 @@ import {
   MapPin, 
   Phone, 
   Mail, 
-  Clock,
   MessageCircle,
   Users,
   Heart,
@@ -26,7 +25,7 @@ export default function ContactPage() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="max-w-4xl mx-auto">
           {/* Contact Information */}
           <div className="space-y-8">
             <Card className="bg-white/90 backdrop-blur-sm border-2 border-[#F6CB62]">
@@ -57,7 +56,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-[#E74902] mb-1">Email</h3>
-                    <p className="text-gray-700 mb-1">info@aolgreatnoida.org</p>
+                    <p className="text-gray-700 mb-1">viditvia@gmail.com</p>
                     <p className="text-sm text-gray-600">We&apos;ll respond within 24 hours</p>
                   </div>
                 </div>
@@ -73,16 +72,6 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-[#FF0000] rounded-full flex items-center justify-center flex-shrink-0">
-                    <Clock className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-[#E74902] mb-1">Office Hours</h3>
-                    <p className="text-gray-700 mb-1">Monday - Saturday</p>
-                    <p className="text-sm text-gray-600">9:00 AM - 6:00 PM</p>
-                  </div>
-                </div>
               </CardContent>
             </Card>
 
@@ -104,118 +93,6 @@ export default function ContactPage() {
                   <Users className="w-5 h-5 mr-2" />
                   Join Community
                 </Button>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* Contact Form */}
-          <div>
-            <Card className="bg-white/90 backdrop-blur-sm border-2 border-[#F6CB62]">
-              <CardHeader>
-                <CardTitle className="text-xl sm:text-2xl text-[#E74902]">Send us a Message</CardTitle>
-                <CardDescription>
-                  Fill out the form below and we&apos;ll get back to you soon
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <form className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                      <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">
-                        First Name *
-                      </label>
-                      <input
-                        type="text"
-                        id="firstName"
-                        name="firstName"
-                        required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E74902] focus:border-transparent"
-                        placeholder="Enter your first name"
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-2">
-                        Last Name *
-                      </label>
-                      <input
-                        type="text"
-                        id="lastName"
-                        name="lastName"
-                        required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E74902] focus:border-transparent"
-                        placeholder="Enter your last name"
-                      />
-                    </div>
-                  </div>
-
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                      Email Address *
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E74902] focus:border-transparent"
-                      placeholder="Enter your email address"
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                      Phone Number
-                    </label>
-                    <input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E74902] focus:border-transparent"
-                      placeholder="Enter your phone number"
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="interest" className="block text-sm font-medium text-gray-700 mb-2">
-                      Area of Interest
-                    </label>
-                    <select
-                      id="interest"
-                      name="interest"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E74902] focus:border-transparent"
-                    >
-                      <option value="">Select an option</option>
-                      <option value="meditation">Meditation</option>
-                      <option value="yoga">Yoga</option>
-                      <option value="breathing">Breathing Techniques</option>
-                      <option value="community">Community Service</option>
-                      <option value="events">Events & Programs</option>
-                      <option value="general">General Inquiry</option>
-                    </select>
-                  </div>
-
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                      Message *
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      rows={5}
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E74902] focus:border-transparent"
-                      placeholder="Tell us how we can help you..."
-                    ></textarea>
-                  </div>
-
-                  <Button 
-                    type="submit" 
-                    className="w-full bg-[#E74902] hover:bg-[#FF0000] text-white py-3 text-lg font-semibold"
-                  >
-                    <Heart className="w-5 h-5 mr-2" />
-                    Send Message
-                  </Button>
-                </form>
               </CardContent>
             </Card>
           </div>

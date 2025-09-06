@@ -41,3 +41,6 @@ src/components-demo/
 
 # development templates
 src/app/templates/
+
+# Note: These pages are excluded from production via next.config.ts rewrites
+# They will redirect to 404 in production builds
