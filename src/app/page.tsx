@@ -1,0 +1,107 @@
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+
+export default function Home() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+      {/* Hero Section */}
+      <section className="container mx-auto px-4 py-16 text-center">
+        <div className="max-w-4xl mx-auto">
+          <h1 className="text-5xl font-bold text-gray-900 mb-6">
+            Art of Living
+          </h1>
+          <h2 className="text-3xl font-semibold text-indigo-600 mb-4">
+            Great Noida Chapter
+          </h2>
+          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+            Join us in spreading happiness, peace, and wisdom through ancient techniques 
+            and modern practices for holistic well-being.
+          </p>
+          <div className="flex gap-4 justify-center flex-wrap">
+            <Button size="lg" className="bg-indigo-600 hover:bg-indigo-700">
+              Join Our Community
+            </Button>
+            <Button variant="outline" size="lg">
+              Learn More
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="container mx-auto px-4 py-16">
+        <div className="text-center mb-12">
+          <h3 className="text-3xl font-bold text-gray-900 mb-4">
+            What We Offer
+          </h3>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Discover transformative programs designed to enhance your physical, mental, and spiritual well-being.
+          </p>
+        </div>
+        
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <Card className="text-center hover:shadow-lg transition-shadow">
+            <CardHeader>
+              <CardTitle className="text-indigo-600">Meditation & Yoga</CardTitle>
+              <CardDescription>
+                Learn ancient techniques for inner peace and physical wellness
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="text-gray-600">
+                Regular sessions to help you find balance and tranquility in daily life.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card className="text-center hover:shadow-lg transition-shadow">
+            <CardHeader>
+              <CardTitle className="text-indigo-600">Breathing Techniques</CardTitle>
+              <CardDescription>
+                Master the art of conscious breathing for better health
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="text-gray-600">
+                Powerful breathing exercises that boost immunity and reduce stress.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card className="text-center hover:shadow-lg transition-shadow">
+            <CardHeader>
+              <CardTitle className="text-indigo-600">Community Service</CardTitle>
+              <CardDescription>
+                Make a positive impact in society through seva
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="text-gray-600">
+                Join hands with like-minded individuals to serve the community.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="bg-indigo-600 text-white py-16">
+        <div className="container mx-auto px-4 text-center">
+          <h3 className="text-3xl font-bold mb-4">Get In Touch</h3>
+          <p className="text-xl mb-8 max-w-2xl mx-auto">
+            Ready to begin your journey towards a more fulfilling life? 
+            Contact us to learn about upcoming programs and events.
+          </p>
+          <div className="flex gap-4 justify-center flex-wrap">
+            <Button variant="secondary" size="lg">
+              Contact Us
+            </Button>
+            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-indigo-600">
+              Upcoming Events
+            </Button>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
