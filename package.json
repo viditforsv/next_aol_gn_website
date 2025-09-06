@@ -8,7 +8,8 @@
     "build": "next build --turbopack",
     "start": "next start",
     "lint": "eslint",
-    "deploy": "vercel --prod"
+    "deploy": "vercel --prod",
+    "deploy:dev": "vercel --target preview"
   },
   "dependencies": {
     "@radix-ui/react-navigation-menu": "^1.2.14",

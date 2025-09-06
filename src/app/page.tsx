@@ -4,6 +4,10 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+      {/* Development Banner */}
+      <div className="bg-yellow-500 text-black text-center py-2 font-semibold">
+        🚧 DEVELOPMENT ENVIRONMENT - Art of Living Great Noida Chapter 🚧
+      </div>
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-16 text-center">
         <div className="max-w-4xl mx-auto">
