@@ -9,15 +9,11 @@ import {
   BookOpen,
   Lightbulb,
   Shield,
-  Star,
-  Award,
-  Calendar,
   MapPin,
   Phone,
   Mail,
   MessageCircle
 } from "lucide-react"
-import Image from "next/image"
 
 export default function TeamPage() {
   return (
