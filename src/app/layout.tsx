@@ -16,6 +16,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Art of Living - Great Noida Chapter",
   description: "Join the Art of Living Great Noida Chapter for meditation, yoga, breathing techniques, and community service programs.",
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({
