@@ -12,7 +12,6 @@ import {
   Heart,
   Calendar
 } from "lucide-react"
-import Image from "next/image"
 
 export default function ContactPage() {
   return (
@@ -20,9 +19,9 @@ export default function ContactPage() {
       <div className="container mx-auto px-4 py-16">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold text-[#000000] mb-4">Contact Us</h1>
-          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-            Get in touch with the Art of Living Great Noida Chapter. We're here to help you 
+          <h1 className="text-3xl sm:text-4xl font-bold text-[#000000] mb-4">Contact Us</h1>
+          <p className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto">
+            Get in touch with the Art of Living Great Noida Chapter. We&apos;re here to help you 
             begin your journey towards inner peace and spiritual growth.
           </p>
         </div>
@@ -32,8 +31,8 @@ export default function ContactPage() {
           <div className="space-y-8">
             <Card className="bg-white/90 backdrop-blur-sm border-2 border-[#F6CB62]">
               <CardHeader>
-                <CardTitle className="text-2xl text-[#E74902] flex items-center">
-                  <MessageCircle className="w-6 h-6 mr-3" />
+                <CardTitle className="text-xl sm:text-2xl text-[#E74902] flex items-center">
+                  <MessageCircle className="w-5 h-5 sm:w-6 sm:h-6 mr-3" />
                   Get In Touch
                 </CardTitle>
                 <CardDescription>
@@ -59,7 +58,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-[#E74902] mb-1">Email</h3>
                     <p className="text-gray-700 mb-1">info@aolgreatnoida.org</p>
-                    <p className="text-sm text-gray-600">We'll respond within 24 hours</p>
+                    <p className="text-sm text-gray-600">We&apos;ll respond within 24 hours</p>
                   </div>
                 </div>
 
@@ -113,9 +112,9 @@ export default function ContactPage() {
           <div>
             <Card className="bg-white/90 backdrop-blur-sm border-2 border-[#F6CB62]">
               <CardHeader>
-                <CardTitle className="text-2xl text-[#E74902]">Send us a Message</CardTitle>
+                <CardTitle className="text-xl sm:text-2xl text-[#E74902]">Send us a Message</CardTitle>
                 <CardDescription>
-                  Fill out the form below and we'll get back to you soon
+                  Fill out the form below and we&apos;ll get back to you soon
                 </CardDescription>
               </CardHeader>
               <CardContent>

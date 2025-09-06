@@ -22,8 +22,8 @@ export default function AboutPage() {
       <div className="container mx-auto px-4 py-16">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold text-[#000000] mb-4">About Us</h1>
-          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+          <h1 className="text-3xl sm:text-4xl font-bold text-[#000000] mb-4">About Us</h1>
+          <p className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto">
             Discover the Art of Living Great Noida Chapter - a community dedicated to 
             spreading happiness, peace, and wisdom through ancient techniques and modern practices.
           </p>
@@ -35,7 +35,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2">
               <div className="p-8">
                 <CardHeader>
-                  <CardTitle className="text-3xl text-[#E74902] mb-4">Our Inspiration</CardTitle>
+                  <CardTitle className="text-2xl sm:text-3xl text-[#E74902] mb-4">Our Inspiration</CardTitle>
                   <CardDescription className="text-lg">
                     Gurudev Sri Sri Ravi Shankar
                   </CardDescription>
@@ -72,7 +72,7 @@ export default function AboutPage() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 text-white">
-                  <p className="text-sm opacity-90">"When you are happy, you can serve the world better."</p>
+                  <p className="text-sm opacity-90">&ldquo;When you are happy, you can serve the world better.&rdquo;</p>
                   <p className="text-xs mt-1 opacity-75">- Gurudev Sri Sri Ravi Shankar</p>
                 </div>
               </div>
@@ -84,10 +84,10 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           <Card className="bg-white/90 backdrop-blur-sm border-2 border-[#F6CB62]">
             <CardHeader>
-              <CardTitle className="text-2xl text-[#E74902] flex items-center">
-                <Lightbulb className="w-6 h-6 mr-3" />
-                Our Mission
-              </CardTitle>
+                <CardTitle className="text-xl sm:text-2xl text-[#E74902] flex items-center">
+                  <Lightbulb className="w-5 h-5 sm:w-6 sm:h-6 mr-3" />
+                  Our Mission
+                </CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-gray-700 leading-relaxed">

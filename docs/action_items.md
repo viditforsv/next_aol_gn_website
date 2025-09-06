@@ -1,3 +1,0 @@
-- contact us page
-- About page
-- Check for responsivity

@@ -20,13 +20,13 @@ export default function Home() {
                   className="h-24 w-auto"
                 />
               </div>
-              <h1 className="text-5xl font-bold text-[#000000] mb-6">
+              <h1 className="text-4xl sm:text-5xl font-bold text-[#000000] mb-6">
                 Art of Living
               </h1>
-              <h2 className="text-3xl font-semibold text-[#E74902] mb-4">
+              <h2 className="text-2xl sm:text-3xl font-semibold text-[#E74902] mb-4">
                 Great Noida Chapter
               </h2>
-              <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
+              <p className="text-lg sm:text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
                 Join us in spreading happiness, peace, and wisdom through ancient techniques 
                 and modern practices for holistic well-being.
               </p>
