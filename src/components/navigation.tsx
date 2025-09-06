@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import {
   NavigationMenu,
@@ -16,9 +17,18 @@ export function Navigation() {
     <nav className="border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
-          <Link href="/" className="flex items-center space-x-2">
-            <span className="text-2xl font-bold text-indigo-600">AOL</span>
-            <span className="text-lg font-semibold text-gray-900">Great Noida</span>
+          <Link href="/" className="flex items-center space-x-3">
+            <Image
+              src="/aol_logo.svg"
+              alt="Art of Living Logo"
+              width={40}
+              height={40}
+              className="h-10 w-auto"
+            />
+            <div className="flex flex-col">
+              <span className="text-lg font-bold text-indigo-600">Art of Living</span>
+              <span className="text-sm font-medium text-gray-600">Great Noida Chapter</span>
+            </div>
           </Link>
 
           <NavigationMenu>

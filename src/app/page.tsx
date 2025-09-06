@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -11,6 +12,15 @@ export default function Home() {
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-16 text-center">
         <div className="max-w-4xl mx-auto">
+          <div className="flex justify-center mb-8">
+            <Image
+              src="/aol_logo.svg"
+              alt="Art of Living Logo"
+              width={120}
+              height={120}
+              className="h-24 w-auto"
+            />
+          </div>
           <h1 className="text-5xl font-bold text-gray-900 mb-6">
             Art of Living
           </h1>
