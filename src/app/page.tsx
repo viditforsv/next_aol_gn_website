@@ -4,9 +4,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+    <div className="min-h-screen bg-gradient-to-br from-[#FFF0CD] to-[#F6CB62]">
       {/* Development Banner */}
-      <div className="bg-yellow-500 text-black text-center py-2 font-semibold">
+      <div className="bg-[#ECA55A] text-black text-center py-2 font-semibold">
         🚧 DEVELOPMENT ENVIRONMENT - Art of Living Great Noida Chapter 🚧
       </div>
       {/* Hero Section */}
@@ -21,10 +21,10 @@ export default function Home() {
               className="h-24 w-auto"
             />
           </div>
-          <h1 className="text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="text-5xl font-bold text-[#000000] mb-6">
             Art of Living
           </h1>
-          <h2 className="text-3xl font-semibold text-indigo-600 mb-4">
+          <h2 className="text-3xl font-semibold text-[#E74902] mb-4">
             Great Noida Chapter
           </h2>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
@@ -32,7 +32,7 @@ export default function Home() {
             and modern practices for holistic well-being.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
-            <Button size="lg" className="bg-indigo-600 hover:bg-indigo-700">
+            <Button size="lg" className="bg-[#F6CB62] hover:bg-[#ECA55A] text-black">
               Join Our Community
             </Button>
             <Button variant="outline" size="lg">
@@ -56,7 +56,7 @@ export default function Home() {
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           <Card className="text-center hover:shadow-lg transition-shadow">
             <CardHeader>
-              <CardTitle className="text-indigo-600">Meditation & Yoga</CardTitle>
+              <CardTitle className="text-[#E74902]">Meditation & Yoga</CardTitle>
               <CardDescription>
                 Learn ancient techniques for inner peace and physical wellness
               </CardDescription>
@@ -70,7 +70,7 @@ export default function Home() {
 
           <Card className="text-center hover:shadow-lg transition-shadow">
             <CardHeader>
-              <CardTitle className="text-indigo-600">Breathing Techniques</CardTitle>
+              <CardTitle className="text-[#E74902]">Breathing Techniques</CardTitle>
               <CardDescription>
                 Master the art of conscious breathing for better health
               </CardDescription>
@@ -84,7 +84,7 @@ export default function Home() {
 
           <Card className="text-center hover:shadow-lg transition-shadow">
             <CardHeader>
-              <CardTitle className="text-indigo-600">Community Service</CardTitle>
+              <CardTitle className="text-[#E74902]">Community Service</CardTitle>
               <CardDescription>
                 Make a positive impact in society through seva
               </CardDescription>
@@ -99,7 +99,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section className="bg-indigo-600 text-white py-16">
+      <section className="bg-[#E74902] text-white py-16">
         <div className="container mx-auto px-4 text-center">
           <h3 className="text-3xl font-bold mb-4">Get In Touch</h3>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
@@ -110,7 +110,7 @@ export default function Home() {
             <Button variant="secondary" size="lg">
               Contact Us
             </Button>
-            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-indigo-600">
+            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-[#E74902]">
               Upcoming Events
             </Button>
           </div>

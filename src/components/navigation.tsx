@@ -26,7 +26,7 @@ export function Navigation() {
               className="h-10 w-auto"
             />
             <div className="flex flex-col">
-              <span className="text-lg font-bold text-indigo-600">Art of Living</span>
+              <span className="text-lg font-bold text-[#E74902]">Art of Living</span>
               <span className="text-sm font-medium text-gray-600">Great Noida Chapter</span>
             </div>
           </Link>
@@ -131,7 +131,7 @@ export function Navigation() {
             <Button variant="outline" size="sm">
               Login
             </Button>
-            <Button size="sm" className="bg-indigo-600 hover:bg-indigo-700">
+            <Button size="sm" className="bg-[#F6CB62] hover:bg-[#ECA55A] text-black">
               Join Now
             </Button>
           </div>
