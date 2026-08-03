@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { 
@@ -163,6 +164,51 @@ export default function EventsPage() {
                 <Button className="w-full bg-[#E74902] hover:bg-[#FF0000] text-white">
                   Register Now
                   <ArrowRight className="w-4 h-4 ml-2" />
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Event 4 */}
+            <Card className="bg-white/90 backdrop-blur-sm border-2 border-[#F6CB62] hover:shadow-xl transition-all duration-300">
+              <CardHeader>
+                <div className="flex items-center justify-between mb-2">
+                  <div className="flex items-center space-x-2">
+                    <Calendar className="w-5 h-5 text-[#E74902]" />
+                    <span className="text-sm font-medium text-[#E74902]">Aug 22, 2026</span>
+                  </div>
+                  <div className="bg-[#E74902] text-white px-2 py-1 rounded-full text-xs font-medium">
+                    Pooja
+                  </div>
+                </div>
+                <CardTitle className="text-xl text-[#E74902]">Rudra Pooja 2026</CardTitle>
+                <CardDescription>
+                  A sacred Vedic ceremony invoking the blessings of Lord Shiva
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-3 mb-6">
+                  <div className="flex items-center space-x-2">
+                    <Clock className="w-4 h-4 text-gray-600" />
+                    <span className="text-sm text-gray-600">6:00 PM onwards</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <MapPin className="w-4 h-4 text-gray-600" />
+                    <span className="text-sm text-gray-600">Club Royal, Purvanchal Royal City, Greater Noida</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Users className="w-4 h-4 text-gray-600" />
+                    <span className="text-sm text-gray-600">Open to all</span>
+                  </div>
+                </div>
+                <p className="text-gray-700 text-sm mb-4">
+                  Immerse yourself in the powerful chants of the Rudram and experience
+                  deep meditation as we perform this ancient pooja together as a community.
+                </p>
+                <Button asChild className="w-full bg-[#E74902] hover:bg-[#FF0000] text-white">
+                  <Link href="/events/rudra-pooja-2026">
+                    View Details
+                    <ArrowRight className="w-4 h-4 ml-2" />
+                  </Link>
                 </Button>
               </CardContent>
             </Card>

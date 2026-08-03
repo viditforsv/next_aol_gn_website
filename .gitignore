@@ -44,3 +44,5 @@ src/app/templates/
 
 # Note: These pages are excluded from production via next.config.ts rewrites
 # They will redirect to 404 in production builds
+# local media originals (not for deployment)
+public/Media 2025/
