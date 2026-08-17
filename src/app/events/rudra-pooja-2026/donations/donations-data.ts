@@ -12,4 +12,5 @@ export const donations: Donation[] = [
   { name: "Anuradha Aggarwal", amount: 600 },
   { name: "Kanika Agarwal", amount: 500 },
   { name: "Purnima Raghav", amount: 5100 },
+  { name: "Shobhana T.", amount: 500 },
 ]
